@@ -140,7 +140,6 @@ const IndexPage = props => {
           ))}
         </BoxContainer>
 
-        <div />
       </HomeLayout>
       <ImageContainer>
         <Image src="/images/faktory_pic.jpg" layout="fill" objectFit="cover" />

@@ -28,6 +28,7 @@ export const HomeLayout = styled.div`
     grid-template-columns: minmax(1%, auto) 0.3fr 1fr minmax(1%, auto) ;
     margin-top: 30px;
     column-gap: 20px;
+    margin-bottom: 70px;
   }
   @media (min-width: ${breakpoints.md}) {
     grid-template-columns: minmax(10%, auto) 0.5fr 2fr minmax(10%, auto);
@@ -42,7 +43,7 @@ export const PageLayout = styled.div`
   display: grid;
   width: 100%;
   @media (max-width: ${breakpoints.md}) {
-    grid-template-columns: minmax(1%, auto) minmax(0, 100px) 1fr minmax(1%, auto);
+    grid-template-columns: minmax(5%, auto) minmax(0, 100px) 1fr minmax(5%, auto);
     column-gap: 5px;
     margin: 100px 0;
   }
@@ -98,14 +99,17 @@ export const Box3 = styled.div`
   margin-bottom: 5px;
   padding-bottom: 10px;
   color: black;
+  @media (max-width: ${breakpoints.lg}) {
+    grid-column: 1/2
+  }
 `
 
 export const Box4 = styled.div`
   @media (max-width: ${breakpoints.lg}) {
-    grid-column: 1/6
+    grid-column: 1/3x
   }
   @media (min-width: ${breakpoints.lg}) {
-    grid-column: 1/6
+    grid-column: 1/4
   }
 `
 
@@ -281,12 +285,11 @@ export const FooterSpace = styled.div`
 `
 
 export const FooterContainer = styled.div` 
-  width: 100%;
   display: grid;
   background: #D3D3CC;
   @media (max-width: ${breakpoints.md}) {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding-left: 20px;
   }
 
   @media (min-width: ${breakpoints.md}) {
@@ -543,22 +546,6 @@ export const ImagePageContainer = styled.div`
 `;
 
 
-export const LeftColumn = styled.div`
-padding: 0 10px 0 12px;
--webkit-overflow-scrolling: touch;
-font-family: 'FoundersGrotesk-Light';
-
-  @media (max-width: ${breakpoints.lg}) {
-    padding: 10px 10px 0 10px;
-  }
-
-  @media (min-width: ${breakpoints.lg}) {
-    height: 97vh;
-  }
-
-
-`;
-
 export const Title = styled(Link)`
   color: black;
   text-decoration: none;
@@ -583,19 +570,6 @@ export const Title = styled(Link)`
   }
 `;
 
-
-
-export const basicStyles = css`
-  background-color: white;
-  color: cornflowerblue;
-  border: 1px solid lightgreen;
-  border-right: none;
-  border-bottom: none;
-  box-shadow: 5px 5px 0 0 lightgreen, 10px 10px 0 0 lightyellow;
-  transition: all 0.1s linear;
-  margin: 3rem 0;
-  padding: 1rem 0.5rem;
-`
 
 export const WrapperCircle = styled.div`
     position: fixed;

@@ -289,8 +289,8 @@ a:hover {
 
 
 .swingging {
-	-webkit-animation: swingging 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
-	        animation: swingging 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
+	-webkit-animation: swingging 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
+	        animation: swingging 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
 }
 
 @-webkit-keyframes swingging {

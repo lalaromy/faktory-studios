@@ -71,54 +71,51 @@ const Layout = ({ children }) => {
       <Header siteTitle={"Faktory Studios"}>
         <Menu />
       </Header>
-      <div>
+      <main>
         {children}
-      </div>
-      <footer>
-        <FooterContainer>
-          <Footer1>
-            <Image src="/images/faktory.png" width={100} height={30} />
-            <a href="https://www.instagram.com/faktorylaboratorio/">
-              <Image src="/images/instagram.png" width={30} height={30} />
-            </a>
-          </Footer1>
+      </main>
+      <FooterContainer>
+        <Footer1>
+          <Image src="/images/faktory.png" width={100} height={30} />
+          <a href="https://www.instagram.com/faktorylaboratorio/">
+            <Image src="/images/instagram.png" width={30} height={30} />
+          </a>
+        </Footer1>
 
-          <Footer2>
-            <FooterItemsTitle>CONTACT</FooterItemsTitle>
-            <FooterAnchor href="mailto:mailto:office@faktory-studios.com">INFO EMAIL</FooterAnchor>
-            <p></p>
-            <FooterAnchor href="mailto:angie@faktory-studios.com">FOUNDER EMAIL</FooterAnchor>
-            <FooterItems>
-              OBILAZNI PUT BBv
+        <Footer2>
+          <FooterItemsTitle>CONTACT</FooterItemsTitle>
+          <FooterAnchor href="mailto:mailto:office@faktory-studios.com">INFO EMAIL</FooterAnchor>
+          <p></p>
+          <FooterAnchor href="mailto:angie@faktory-studios.com">FOUNDER EMAIL</FooterAnchor>
+          <FooterItems>
+            OBILAZNI PUT BBv
           </FooterItems>
-            <FooterItems>
-              SERBIA
+          <FooterItems>
+            SERBIA
           </FooterItems>
-            <FooterItems>
-              15353 MAJUR
+          <FooterItems>
+            15353 MAJUR
           </FooterItems>
-          </Footer2>
+        </Footer2>
 
-          <Footer3>
-            <FooterItemsTitle>SERVICES</FooterItemsTitle>
-            {dataProduction.map((item, key) => (
-              <Link href={item.link}>
-                <FooterItems>
-                  {item.headline}
-                </FooterItems>
-              </Link>
-            ))}
-          </Footer3>
+        <Footer3>
+          <FooterItemsTitle>SERVICES</FooterItemsTitle>
+          {dataProduction.map((item, key) => (
+            <Link href={item.link}>
+              <FooterItems>
+                {item.headline}
+              </FooterItems>
+            </Link>
+          ))}
+        </Footer3>
 
-          <Footer4>
-            <p></p>
-            <FooterAnchor>PRIVACY POLICY</FooterAnchor>
-            <p></p>
-            <FooterAnchor>COPYRIGHT</FooterAnchor>
-          </Footer4>
-        </FooterContainer>
-
-      </footer>
+        <Footer4>
+          <p></p>
+          <FooterAnchor>PRIVACY POLICY</FooterAnchor>
+          <p></p>
+          <FooterAnchor>COPYRIGHT</FooterAnchor>
+        </Footer4>
+      </FooterContainer>
 
     </>
   );
