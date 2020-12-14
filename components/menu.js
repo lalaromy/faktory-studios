@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
-import Link from "next/link";
 import { isBrowser } from "react-device-detect";
-import { LinkStyles, BmItem, BmItemLink, BmOverlay } from '../styles/styles'
+import { LinkStyles, BmItem, BmItemDiv, MenuLink, BmOverlay } from '../styles/styles'
 import Image from 'next/image'
 
 const styles = {
@@ -56,57 +55,6 @@ const styles = {
   }
 };
 
-const mobileStyles = {
-  bmBurgerButton: {
-    position: "fixed",
-    width: "30px",
-    height: "30px",
-    right: "15px",
-    top: "13px"
-  },
-  bmBurgerBars: {
-    background: "#373a47"
-  },
-  bmBurgerBarsHover: {
-    background: "#a90000"
-  },
-  bmCrossButton: {
-    height: "24px",
-    width: "24px",
-    right: "20px",
-    top: "20px"
-  },
-  bmCross: {},
-  bmMenuWrap: {
-    position: "fixed",
-    height: "100%",
-    top: "0"
-  },
-  bmMenu: {
-    background: "#d3d3cc",
-    display: "flex",
-    width: "100%"
-  },
-  bmMorphShape: {
-    fill: "#373a47"
-  },
-  bmItemList: {
-    color: "black",
-    padding: "0.8em",
-    width: "100%"
-  },
-  bmItem: {
-    display: "inline-block",
-    outline: "none",
-    width: "max-content",
-    margin: "0 0 0 16px",
-    lineHeight: "3em"
-  },
-  bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3)",
-    display: "flex"
-  }
-};
 
 const Line = (
   <svg
@@ -159,25 +107,16 @@ const Layout = () => {
       className="Menufade"
       style={{ padding: "30px 0" }}
     >
-      <Link href="/pattern-making">
-        <LinkStyles>{Line} PATTERN MAKING</LinkStyles>
-      </Link>
-      <Link href="/fabric-trim-sourcing">
-        <LinkStyles >
-          {Line} FABRIC & TRIM SOURCING
-        </LinkStyles>
-      </Link>
-      <Link href="/apparel-production">
-        <LinkStyles>{Line} APPAREL PRODUCTION</LinkStyles>
-      </Link>
 
-      <Link href="/shipping">
-        <LinkStyles> {Line} SHIPPING</LinkStyles>
-      </Link>
-
-      <Link href="/photography">
-        <LinkStyles>{Line} PHOTOGRAPHY</LinkStyles>
-      </Link>
+      {Line}<LinkStyles href="/pattern-making">PATTERN MAKING</LinkStyles>
+      <p></p>
+      {Line}<LinkStyles href="/fabric-trim-sourcing"> FABRIC & TRIM SOURCING </LinkStyles>
+      <p></p>
+      {Line}<LinkStyles href="/apparel-production">APPAREL PRODUCTION</LinkStyles>
+      <p></p>
+      {Line}<LinkStyles href="/shipping"> SHIPPING</LinkStyles>
+      <p></p>
+      {Line}<LinkStyles href="/photography">PHOTOGRAPHY</LinkStyles>
     </div>
   );
 
@@ -186,18 +125,9 @@ const Layout = () => {
       className="Menufade"
       style={{ padding: isBrowser ? "10px 0 0 0" : "16px 0 0 0" }}
     >
-      <Link
-        href="/cmt"
-        style={{ display: "block" }}
-      >
-        <LinkStyles>{Line}CMT</LinkStyles>
-      </Link>
-      <Link
-        href="/manufacturing-fpp"
-        style={{ display: "block" }}
-      >
-        <LinkStyles>{Line}FPP</LinkStyles>
-      </Link>
+      {Line}<LinkStyles href="/cmt">CMT</LinkStyles>
+      <p></p>
+      {Line}<LinkStyles href="/manufacturing-fpp">FPP</LinkStyles>
     </div>
   );
 
@@ -219,55 +149,46 @@ const Layout = () => {
         customCrossIcon={<img src="/images/cross.png" />}
       >
         <BmOverlay>
-          <BmItem
+          <BmItemDiv
             className="menu_effects"
             onClick={() => setShowServicesFx()}
           >
             DEVELOPMENT SERVICES
-            </BmItem>
+            </BmItemDiv>
           {showServices ? serviceMenu : null}
 
-          <BmItem
+          <BmItemDiv
             className="menu_effects"
             onClick={() => setShowManufacturingFx(true)}
           >
             MANUFACTURING
-            </BmItem>
+            </BmItemDiv>
           {showManufacturing ? manufacturingMenu : null}
 
-          <Link
-            href="/contact"
-            style={{ display: "block" }}
-            className="menu_effects"
-            passHref
-          >
-            <BmItemLink>
+          <MenuLink href="/contact">
+            <BmItemDiv>
               CONTACT
-                </BmItemLink>
-          </Link>
+            </BmItemDiv>
+          </MenuLink>
 
-
-          <Link
+          <MenuLink
             href="/about"
-            style={{ display: "block" }}
+            className="menu_effects"
           >
-            <BmItemLink
-              className="menu_effects"
-            >
+            <BmItemDiv>
               ABOUT
-            </BmItemLink>
-          </Link>
+            </BmItemDiv>
+          </MenuLink>
 
-          <Link
+          <MenuLink
             href="/faq"
-            style={{ display: "block" }}
+            className="menu_effects"
           >
-            <BmItemLink
-              className="menu_effects"
-            >
+            <BmItemDiv>
               FAQ
-            </BmItemLink>
-          </Link>
+            </BmItemDiv>
+          </MenuLink>
+
 
           <a href="https://www.instagram.com/faktorylaboratorio/">
             <Image src="/images/instagram.png" width={30} height={30} />

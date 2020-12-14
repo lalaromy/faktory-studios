@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useRef, useState } from "react";
-import Link from 'next/link';
 import Layout from "../components/layout";
 import {
   WrapperNextButton,
@@ -22,6 +21,7 @@ import patternText from "../data/pattern-making.json";
 import photographyText from "../data/photography.json";
 import shippingText from "../data/shipping.json";
 import Image from 'next/image';
+import Head from 'next/head'
 
 const Pages = () => {
   const [currentPath, setCurrentPath] = useState();
@@ -163,6 +163,28 @@ const Pages = () => {
     if (currentPath === item.url) {
       return (
         <div key={Date.now()}>
+          <Head>
+            <title>{item.headline} | Faktory Studios | Serbia Europe</title>
+            <link rel='icon' type='image/png' href='/faktory.png' sizes='32x32' />
+            <meta
+              name='description'
+              content={item.text[0] + ', ' + item.text[1]}
+            />
+            <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+            <meta
+              property='og:title'
+              content={`${item.headline} | FAKTORY STUDIOS | Manufacturing CMT FPP clothing apparel producer in Serbia Europe `}
+            />
+            <meta property='og:description' content={item.text[0] + ', ' + item.text[1]} />
+            <meta property='og:image' content='https://i.ibb.co/BqLShmz/Faktory-Studios-logo.png' />
+            <meta property='og:image:secure_url' content='https://i.ibb.co/BqLShmz/Faktory-Studios-logo.png' />
+            <meta property='og:image:type' content='image/jpeg' />
+            <meta property='og:image:width' content='640' />
+            <meta property='og:image:height' content='442' />
+            <meta property='og:url' content='http://faktory-studios.com/' />
+
+          </Head>
+
           <Layout ref={pageRef}>
             <PageLayout>
               <div />
@@ -178,12 +200,12 @@ const Pages = () => {
                     </>
                   ))}
                   {item.nextUrl ? (
-                    <Link href={"/" + item.nextUrl} style={{ color: "black" }} passHref>
-                      <WrapperNextButton>
-                        NEXT: {item.nextName}
+                    <>
+                      NEXT : __
+                    <WrapperNextButton href={"/" + item.nextUrl}>
+                        {item.nextName}
                       </WrapperNextButton>
-
-                    </Link>
+                    </>
                   ) : null}
                 </Box22>
                 <Box3>

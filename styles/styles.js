@@ -99,9 +99,7 @@ export const Box3 = styled.div`
   margin-bottom: 5px;
   padding-bottom: 10px;
   color: black;
-  @media (max-width: ${breakpoints.lg}) {
-    grid-column: 1/2
-  }
+
 `
 
 export const Box4 = styled.div`
@@ -203,7 +201,6 @@ export const HomeKeyValues = styled.span`
 `;
 
 export const HomeMore = styled(Link)`
-
  @media (max-width: ${breakpoints.lg}) {
     font-weight: 400;
     font-size: 16px;
@@ -263,7 +260,7 @@ export const EmailAnchor = styled.a`
  font-weight: 200;
 `;
 
-export const WrapperNextButton = styled.a`
+export const WrapperNextButton = styled(Link)`
   font-family: "FoundersGrotesk-Medium";
   margin: 50px 0 0 0;
   text-decoration: none;
@@ -386,7 +383,7 @@ export const MenuBar = styled.div`
   z-index: 1000;
 `;
 
-export const LinkStyles = styled.a`
+export const LinkStyles = styled(Link)`
   display: block;
   cursor: pointer;
   color: black;
@@ -438,17 +435,95 @@ export const BmItem = styled.div`
   }
 `;
 
-export const BmItemLink = styled.a`
-  font-size: 30px;
+export const BmItemDiv = styled.div`
+  font-size: 28px;
+  line-height: 3em;
   display: block;
   color: black;
   cursor: pointer;
   text-decoration: none;
-  font-family: "FoundersGrotesk-Regular";
   z-index: 3000;
   text-transform: uppercase;
   text-decoration: none;
-  display: lock;
+  position: relative;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+    width: 100%;
+  }
+  &:after {
+    font-family: "FoundersGrotesk-Regular";
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover:after {
+    font-family: "FoundersGrotesk-Regular";
+    width: 100%;
+    left: 0;
+  }
+`;
+
+
+export const MenuLink = styled(Link)`
+  font-size: 28px;
+  line-height: 2em;
+  display: block;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 3000;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+    width: 100%;
+  }
+  &:after {
+    font-family: "FoundersGrotesk-Regular";
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover:after {
+    font-family: "FoundersGrotesk-Regular";
+    width: 100%;
+    left: 0;
+  }
+`
+
+export const BmItemLink = styled(Link)`
+  font-size: 28px;
+  line-height: 2em;
+  display: block;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 3000;
+  text-transform: uppercase;
+  text-decoration: none;
   position: relative;
   @media screen and (max-width: 500px) {
     font-size: 20px;
@@ -479,8 +554,7 @@ export const BmItemLink = styled.a`
 `;
 
 export const BmOverlay = styled.div`
-  font-size: 37.5px;
-  line-height: 2em;
+  
 `;
 
 export const LogoImage = styled.div`
