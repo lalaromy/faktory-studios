@@ -35,8 +35,8 @@ const Faq = () => {
                     content={`FAKTORY STUDIOS | Clothing Manufacturing in Serbia Europe | CMT Serbia | FPP Serbia | Clothing Apparel producer in Serbia Europe | clothing manufacturing serbia | garment manufacturing serbia | apparel production serbia | pattern making serbia | fpp serbia | cmt serbia | fashion brand production serbia | cheap production europe | `}
                 />
                 <meta property='og:description' content='FAKTORY STUDIOS | Clothing apparel manufacturing in Serbia Europe' />
-                <meta property='og:image' content='https://i.ibb.co/BqLShmz/Faktory-Studios-logo.png' />
-                <meta property='og:image:secure_url' content='https://i.ibb.co/BqLShmz/Faktory-Studios-logo.png' />
+                <meta property='og:image' content='https://i.ibb.co/M5gspLj/FKT-Studios.png' />
+                <meta property='og:image:secure_url' content='https://i.ibb.co/M5gspLj/FKT-Studios.png' />
                 <meta property='og:image:type' content='image/jpeg' />
                 <meta property='og:image:width' content='640' />
                 <meta property='og:image:height' content='442' />
