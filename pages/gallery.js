@@ -41,7 +41,7 @@ const Faq = () => {
 
       <Layout >
 
-        {Array(24).fill().map((item, index) => (
+        {Array(33).fill().map((item, index) => (
           <GalleryContainer>
             <Image src={"/gallery/" + index + ".jpg"} layout="fill" objectFit="cover" />
           </GalleryContainer>

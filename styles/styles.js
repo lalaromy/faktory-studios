@@ -627,7 +627,7 @@ export const ImageContainer = styled.div`
 export const GalleryContainer = styled.div`
   position: relative;
   width: 100%; 
-  height: 700px;
+  height: 1000px;
   margin-bottom: 50px;
 `;
 
