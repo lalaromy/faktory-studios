@@ -314,8 +314,8 @@ export const Footer1 = styled.div`
   justify-content: space-evenly;
   align-items: center;
   @media (max-width: ${breakpoints.md}) {
-    height: 15vh;
     align-items: flex-start;
+    margin: 30px 0;
   }
 `
 

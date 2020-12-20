@@ -77,8 +77,10 @@ const Layout = ({ children }) => {
       <FooterContainer>
         <Footer1>
           <Image src="/images/faktory.png" width={100} height={30} />
+          <div style={{ height: '12px' }} />
           <Image src="/images/faktory_laboratorio.png" width={100} height={50} />
           <Image src="/images/faktory_tissus2.png" width={100} height={50} />
+
           <a href="https://www.instagram.com/faktorylaboratorio/">
             <Image src="/images/instagram.png" width={30} height={30} />
           </a>
@@ -90,7 +92,7 @@ const Layout = ({ children }) => {
           <p></p>
           <FooterAnchor href="mailto:angie@faktory-studios.com">FOUNDER EMAIL</FooterAnchor>
           <FooterItems>
-            OBILAZNI PUT BBv
+            OBILAZNI PUT BB
           </FooterItems>
           <FooterItems>
             SERBIA
