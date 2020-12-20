@@ -77,6 +77,8 @@ const Layout = ({ children }) => {
       <FooterContainer>
         <Footer1>
           <Image src="/images/faktory.png" width={100} height={30} />
+          <Image src="/images/faktory_laboratorio.png" width={100} height={50} />
+          <Image src="/images/faktory_tissus2.png" width={100} height={50} />
           <a href="https://www.instagram.com/faktorylaboratorio/">
             <Image src="/images/instagram.png" width={30} height={30} />
           </a>
