@@ -9,8 +9,9 @@ import {
   BoxContainer,
   Box1,
   Box22,
-  Box3,
-  Text
+  Box33,
+  Text,
+  ImageContainer
 } from '../styles/styles';
 import aboutText from "../data/about.json";
 import apparelText from "../data/apparel.json";
@@ -102,7 +103,7 @@ const Pages = () => {
     {
       index: 5,
       url: "apparel-production",
-      image: "/images/faktory_pic.jpg",
+      image: "/images/apparel.jpg",
       headline: apparelText.headline.toUpperCase(),
       subheadline: apparelText.subheadline.toUpperCase(),
       text: [
@@ -139,7 +140,7 @@ const Pages = () => {
     {
       index: 8,
       url: "about",
-      image: "/images/faktory_pic.jpg",
+      image: "/images/about.jpg",
       headline: aboutText.headline.toUpperCase(),
       subheadline: aboutText.subheadline.toUpperCase(),
       text: [aboutText.paragraph1.toUpperCase(), aboutText.paragraph2.toUpperCase()],
@@ -191,35 +192,28 @@ const Pages = () => {
               <Box1 className="swingging">
                 <Headline>{item.headline}</Headline>
               </Box1>
-              <BoxContainer>
-                <Box22>
-                  {item.text.map(el => (
-                    <>
-                      <Text>{el}</Text>
-                      <p></p>
-                    </>
-                  ))}
-                  {item.nextUrl ? (
-                    <>
-                      NEXT : __
+              <Box22>
+                {item.text.map(el => (
+                  <>
+                    <Text>{el}</Text>
+                    <p></p>
+                  </>
+                ))}
+                {item.nextUrl ? (
+                  <>
+                    NEXT : __
                     <WrapperNextButton href={"/" + item.nextUrl}>
-                        {item.nextName}
-                      </WrapperNextButton>
-                    </>
-                  ) : null}
-                </Box22>
-                <Box3>
-                  <ImagePageContainer>
-                    <Image
-                      src={item.image}
-                      layout="responsive"
-                      width={100}
-                      height={100}
-                    />
-                  </ImagePageContainer>
-                </Box3>
-              </BoxContainer>
+                      {item.nextName}
+                    </WrapperNextButton>
+                  </>
+                ) : null}
+              </Box22>
               <div />
+              <Box33>
+                <ImageContainer>
+                  <Image src={item.image} layout="fill" objectFit="cover" />
+                </ImageContainer>
+              </Box33>
             </PageLayout>
           </Layout>
         </div>

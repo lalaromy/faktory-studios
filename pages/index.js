@@ -112,7 +112,7 @@ const IndexPage = () => {
 
       <Layout>
         <HeroContainer>
-          {/* <Image src="/images/hero.jpg" layout="fill" objectFit="cover" /> */}
+          <Image src="/home/home1.jpg" layout="fill" objectFit="cover" />
           <HeroTitle>{text.keyfactor}</HeroTitle>
         </HeroContainer>
 
@@ -163,7 +163,7 @@ const IndexPage = () => {
 
         </HomeLayout>
         <ImageContainer>
-          <Image src="/images/faktory_pic.jpg" layout="fill" objectFit="cover" />
+          <Image src="/home/home2.jpg" layout="fill" objectFit="cover" />
         </ImageContainer>
 
         <HomeLayout>
@@ -228,6 +228,9 @@ const IndexPage = () => {
           </BoxContainer>
           <div />
         </HomeLayout>
+        <ImageContainer>
+          <Image src="/home/home3.jpg" layout="fill" objectFit="cover" />
+        </ImageContainer>
       </Layout>
     </div>
   );

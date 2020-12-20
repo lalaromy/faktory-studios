@@ -151,19 +151,25 @@ const Layout = () => {
         <BmOverlay>
           <BmItemDiv
             className="menu_effects"
+            onClick={() => setShowManufacturingFx(true)}
+          >
+            MANUFACTURING
+            </BmItemDiv>
+          {showManufacturing ? manufacturingMenu : null}
+
+          <BmItemDiv
+            className="menu_effects"
             onClick={() => setShowServicesFx()}
           >
             DEVELOPMENT SERVICES
             </BmItemDiv>
           {showServices ? serviceMenu : null}
 
-          <BmItemDiv
-            className="menu_effects"
-            onClick={() => setShowManufacturingFx(true)}
-          >
-            MANUFACTURING
+          <MenuLink href="/gallery">
+            <BmItemDiv>
+              GALLERY
             </BmItemDiv>
-          {showManufacturing ? manufacturingMenu : null}
+          </MenuLink>
 
           <MenuLink href="/contact">
             <BmItemDiv>

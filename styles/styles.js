@@ -78,7 +78,7 @@ export const BoxContainer = styled.div`
     grid-template-columns: 100%;
   }
   @media (min-width: ${breakpoints.lg}) {
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 80% 20%;
     max-width: 1200px;
   }
 `
@@ -99,12 +99,24 @@ export const Box3 = styled.div`
   margin-bottom: 5px;
   padding-bottom: 10px;
   color: black;
+`
 
+export const Box33 = styled.div`
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  color: black;
+  margin-top: 30px;
+  @media (max-width: ${breakpoints.lg}) {
+    grid-column: 3/4
+  }
+  @media (min-width: ${breakpoints.lg}) {
+    grid-column: 1/6
+  }
 `
 
 export const Box4 = styled.div`
   @media (max-width: ${breakpoints.lg}) {
-    grid-column: 1/3x
+    grid-column: 1/3
   }
   @media (min-width: ${breakpoints.lg}) {
     grid-column: 1/4
@@ -606,9 +618,16 @@ export const RightColumn = styled.div`
 export const ImageContainer = styled.div`
   position: relative;
   width: 100%; 
-  height: 400px;
+  height: 700px;
   border-top: 10px solid black;
   border-bottom: 10px solid black;
+  margin-bottom: 50px;
+`;
+
+export const GalleryContainer = styled.div`
+  position: relative;
+  width: 100%; 
+  height: 700px;
   margin-bottom: 50px;
 `;
 

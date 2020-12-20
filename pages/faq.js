@@ -9,7 +9,8 @@ import {
     Box1,
     Box22,
     Box3,
-    Text
+    Text,
+    WrapperNextButton
 } from "../styles/styles";
 import text from "../data/faq.json";
 import Head from 'next/head'
@@ -73,6 +74,13 @@ const Faq = () => {
 
                         <Subheadline>{text.textheadline8}</Subheadline>
                         <Text>{text.text8}</Text>
+                        <p></p>
+                        <>
+                            NEXT : __
+                            <WrapperNextButton href={"/gallery"}>
+                                Gallery
+                            </WrapperNextButton>
+                        </>
                     </faqText>
                     <div />
                 </PageLayout>
