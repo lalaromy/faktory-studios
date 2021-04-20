@@ -176,7 +176,7 @@ const Pages = () => {
       return (
         <div key={Date.now()}>
           <Head>
-            <title>{item.headline} | Faktory Studios | Serbia Europe</title>
+            <title>{item.headline} | Faktory Studios Serbia Europe</title>
             <link
               rel="icon"
               type="image/png"
@@ -191,20 +191,20 @@ const Pages = () => {
               name="viewport"
               content="width=device-width, initial-scale=1.0"
             />
-            <meta
-              property="og:title"
-              content={`FAKTORY STUDIOS | Clothing Manufacturing in Serbia Europe | CMT Serbia | FPP Serbia | Clothing Apparel producer in Serbia Europe | clothing manufacturing serbia | garment manufacturing serbia | apparel production serbia | pattern making serbia | fpp serbia | cmt serbia | fashion brand production serbia | cheap production europe | `}
-            />
+            <meta property="og:title" content={`${item.headline}`} />
             <meta
               property="og:description"
-              content="FAKTORY STUDIOS | Clothing apparel manufacturing in Serbia Europe"
+              content="Clothing apparel quality manufacturing, CMT and FPP in Serbia Europe"
             />
             <meta property="og:image" content={item.image} />
             <meta property="og:image:secure_url" content={item.image} />
             <meta property="og:image:type" content="image/jpeg" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="600" />
-            <meta property="og:url" content="http://faktory-studios.com/" />
+            <meta
+              property="og:url"
+              content={"http://faktory-studios.com/" + currentPath}
+            />
           </Head>
 
           <Layout ref={pageRef}>
