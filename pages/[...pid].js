@@ -177,30 +177,21 @@ const Pages = () => {
         <div key={Date.now()}>
           <Head>
             <title>{item.headline} | Faktory Studios Serbia Europe</title>
-            <link
-              rel="icon"
-              type="image/png"
-              href="/faktory.png"
-              sizes="32x32"
-            />
+
             <meta
               name="description"
               content={item.text[0] + ", " + item.text[1]}
-            />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
             />
             <meta property="og:title" content={`${item.headline}`} />
             <meta
               property="og:description"
               content="Clothing apparel quality manufacturing, CMT and FPP in Serbia Europe"
             />
-            <meta property="og:image" content={item.image} />
+            {/* <meta property="og:image" content={item.image} />
             <meta property="og:image:secure_url" content={item.image} />
             <meta property="og:image:type" content="image/jpeg" />
             <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="600" />
+            <meta property="og:image:height" content="600" /> */}
             <meta
               property="og:url"
               content={"http://faktory-studios.com/" + currentPath}

@@ -107,14 +107,12 @@ const IndexPage = () => {
     <div>
       <Head>
         <title>FAKTORY STUDIOS | Serbia Europe</title>
-        <link rel="icon" type="image/png" href="/faktory.png" sizes="32x32" />
         <meta
           name="description"
           content={
             "- Faktory Studios is the one-stop enterprise where one can discover that the production process was never as enjoyable as it is now - the design, sourcing, manufacturing and shipping as four phases we take care of the full process, letting the client focus on other parts of a fashion business. With the lowest minimum quantities, one can find on the market, we offer our clients an ability to react quickly on the market needs or trying new product styles, without risking ending up with too much left-over stock."
           }
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={`FAKTORY STUDIOS`} />
         <meta
           property="og:description"

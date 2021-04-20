@@ -22,33 +22,18 @@ const Contact = () => {
   return (
     <div>
       <Head>
-        <title>CONTACT | FAKTORY STUDIOS</title>
-        <link rel="icon" type="image/png" href="/faktory.png" sizes="32x32" />
+        <title>CONTACT | Faktory Studios Serbia Europe</title>
         <meta
           name="description"
-          content={`FAKTORY STUDIOS | Clothing Manufacturing in Serbia Europe | CMT Serbia | FPP Serbia | Clothing Apparel producer in Serbia Europe | clothing manufacturing serbia | garment manufacturing serbia | apparel production serbia | pattern making serbia | fpp serbia | cmt serbia | fashion brand production serbia | cheap production europe | `}
+          content={`Clothing apparel manufacturing in Serbia Europe`}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          property="og:title"
-          content={`FAKTORY STUDIOS | Clothing Manufacturing in Serbia Europe | CMT Serbia | FPP Serbia | Clothing Apparel producer in Serbia Europe | clothing manufacturing serbia | garment manufacturing serbia | apparel production serbia | pattern making serbia | fpp serbia | cmt serbia | fashion brand production serbia | cheap production europe | `}
-        />
+        <meta property="og:title" content={`Contact`} />
         <meta
           property="og:description"
-          content="FAKTORY STUDIOS | Clothing apparel manufacturing in Serbia Europe"
+          content="Clothing apparel manufacturing in Serbia Europe"
         />
-        <meta
-          property="og:image"
-          content="https://i.ibb.co/M5gspLj/FKT-Studios.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://i.ibb.co/M5gspLj/FKT-Studios.png"
-        />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="640" />
-        <meta property="og:image:height" content="442" />
-        <meta property="og:url" content="http://faktory-studios.com/" />
+        <meta property="og:url" content="http://faktory-studios.com/contact" />
       </Head>
       <Layout>
         <PageLayout>
