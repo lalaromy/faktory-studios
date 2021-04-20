@@ -200,7 +200,7 @@ const Pages = () => {
             <meta property="og:image:height" content="600" />
             <meta
               property="og:url"
-              content={"http://faktory-studios.com/" + currentPath}
+              content={"https://faktory-studios.com/" + currentPath}
             />
           </Head>
 

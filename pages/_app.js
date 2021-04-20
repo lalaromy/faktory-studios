@@ -5,7 +5,7 @@ import Head from "next/head";
 const App = ({ Component, pageProps }) => (
   <>
     <Head>
-      <link rel="icon" type="image/png" href="/faktory.png" sizes="32x32" />
+      <link rel="shortcut icon" href="../favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         property="og:image"
