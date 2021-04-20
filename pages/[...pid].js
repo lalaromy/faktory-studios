@@ -176,16 +176,21 @@ const Pages = () => {
       return (
         <div key={Date.now()}>
           <Head>
-            <title>{item.headline} | Faktory Studios Serbia Europe</title>
+            <title>{item.headline} | Faktory Studios </title>
 
             <meta
               name="description"
-              content={item.text[0] + ", " + item.text[1]}
+              content={
+                "- Faktory Studios is the one-stop enterprise where one can discover that the production process was never as enjoyable as it is now - the design, sourcing, manufacturing and shipping as four phases we take care of the full process, letting the client focus on other parts of a fashion business. With the lowest minimum quantities, one can find on the market, we offer our clients an ability to react quickly on the market needs or trying new product styles, without risking ending up with too much left-over stock."
+              }
             />
-            <meta property="og:title" content={`${item.headline}`} />
+            <meta
+              property="og:title"
+              content={`${item.headline} | Faktory Studios Serbia Europe`}
+            />
             <meta
               property="og:description"
-              content="Clothing apparel quality manufacturing, CMT and FPP in Serbia Europe"
+              content="- Faktory Studios is the one-stop enterprise where one can discover that the production process was never as enjoyable as it is now - the design, sourcing, manufacturing and shipping as four phases we take care of the full process, letting the client focus on other parts of a fashion business. With the lowest minimum quantities, one can find on the market, we offer our clients an ability to react quickly on the market needs or trying new product styles, without risking ending up with too much left-over stock."
             />
             {/* <meta property="og:image" content={item.image} />
             <meta property="og:image:secure_url" content={item.image} />
